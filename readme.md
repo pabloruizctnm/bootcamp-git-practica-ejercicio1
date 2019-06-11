@@ -29,4 +29,10 @@ De tal forma, busco el commit que me interesa y vuelvo a hacer un reset, como en
 En este caso uso de nuevo --hard para desechar mi working copy y recuperar el antiguo.<br>
 Uso el identificador del commit c7bf460, que es donde había añadido el estilo al fichero git-nuestro.md.
 
+**- El merge del paso 13, ¿Causó algún conflicto? ¿Por qué?**
 
+`git merge master`
+
+No causó conflictos porque se absorbe la rama master en la rama styled. La rama master está al menos un commit por detrás, y además "en linea". Es decir, no se ha trabajado en la rama master desde que se dejó para hacer cambios en la rama styled.
+
+**- El merge del paso 19, ¿Causó algún conflicto? ¿Por qué?**
