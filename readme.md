@@ -39,7 +39,16 @@ No causó conflictos porque se absorbe la rama master en la rama styled. La rama
 
 En este caso hemos hecho:
  
- `git merge htmlify`
+ `git merge htmlify` desde styles
  
  Y por supuesto que causa conflictos. Hemos modificado varias de las líneas de un mismo documento desde dos ramas diferentes al mismo tiempo.
  
+ **- El merge del paso 21, ¿Causó algún conflicto? ¿Por qué?**
+ 
+ En este caso hemos hecho:
+  
+  `git merge styles` desde master
+  
+ En esta ocasión no causa conflictos porque master estaba actualizada a la rama styles; y habíamos conservado los cambios de la rama styles cuando la mergeamos con htmlify.
+  
+  
