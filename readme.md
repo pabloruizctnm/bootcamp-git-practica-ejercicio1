@@ -36,3 +36,10 @@ Uso el identificador del commit c7bf460, que es donde había añadido el estilo 
 No causó conflictos porque se absorbe la rama master en la rama styled. La rama master está al menos un commit por detrás, y además "en linea". Es decir, no se ha trabajado en la rama master desde que se dejó para hacer cambios en la rama styled.
 
 **- El merge del paso 19, ¿Causó algún conflicto? ¿Por qué?**
+
+En este caso hemos hecho:
+ 
+ `git merge htmlify`
+ 
+ Y por supuesto que causa conflictos. Hemos modificado varias de las líneas de un mismo documento desde dos ramas diferentes al mismo tiempo.
+ 
