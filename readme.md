@@ -2,9 +2,9 @@
 
 `git reset --hard HEAD~1`
 
-Use reset porque es lo que se usa para deshacer commits. <br>
-Use --hard para indicar que no quería conservar los cambios en el working copy. <br>
-Use HEAD~1 para irme 1 commit anterior. Podría haber usado la referencia del commit por ejemplo.
+Uso reset porque es lo que se usa para deshacer commits. <br>
+Uso --hard para indicar que no quería conservar los cambios en el working copy. <br>
+Uso HEAD~1 para irme 1 commit anterior. Podría haber usado la referencia del commit por ejemplo.
 
 **- ¿Qué comando o comandos utilizaste en el paso 12? ¿Por qué?**
 
@@ -12,15 +12,15 @@ Use HEAD~1 para irme 1 commit anterior. Podría haber usado la referencia del co
 
 Gracias a este comando, puedo ver un histórico de todos las actualizaciones que he ido haciendo en git en orden cronológico. Me queda algo como lo siguiente: <br>
 
-4b6cb3c (HEAD -> styled, master) HEAD@{0}: checkout: moving from results to styled<br>
-d99426a (results) HEAD@{1}: commit: Añado la carpeta .idea. Si no me equivoco, la genera el editor de texto PhpStorm. No es importante en este caso<br>
-a8a310e HEAD@{2}: commit: Añado la respuesta a la pregunta 1 - paso 11<br>
-4b6cb3c (HEAD -> styled, master) HEAD@{3}: checkout: moving from master to results<br>
-4b6cb3c (HEAD -> styled, master) HEAD@{4}: checkout: moving from styled to master<br>
-4b6cb3c (HEAD -> styled, master) HEAD@{5}: reset: moving to HEAD~1<br>
-c7bf460 HEAD@{6}: commit: Añado estilo al fichero git-nuestro.md<br>
-4b6cb3c (HEAD -> styled, master) HEAD@{7}: checkout: moving from master to styled<br>
-4b6cb3c (HEAD -> styled, master) HEAD@{8}: commit (initial): Añado git-nuestro.md<br>
+*4b6cb3c (HEAD -> styled, master) HEAD@{0}: checkout: moving from results to styled<br>*
+*d99426a (results) HEAD@{1}: commit: Añado la carpeta .idea. Si no me equivoco, la genera el editor de texto PhpStorm. No es importante en este caso<br>*
+*a8a310e HEAD@{2}: commit: Añado la respuesta a la pregunta 1 - paso 11<br>*
+*4b6cb3c (HEAD -> styled, master) HEAD@{3}: checkout: moving from master to results<br>*
+*4b6cb3c (HEAD -> styled, master) HEAD@{4}: checkout: moving from styled to master<br>*
+*4b6cb3c (HEAD -> styled, master) HEAD@{5}: reset: moving to HEAD~1<br>*
+*c7bf460 HEAD@{6}: commit: Añado estilo al fichero git-nuestro.md<br>*
+*4b6cb3c (HEAD -> styled, master) HEAD@{7}: checkout: moving from master to styled<br>*
+*4b6cb3c (HEAD -> styled, master) HEAD@{8}: commit (initial): Añado git-nuestro.md<br>*
 
 De tal forma, busco el commit que me interesa y vuelvo a hacer un reset, como en la pregunta 11.
 
@@ -56,11 +56,39 @@ En este caso hemos hecho:
  
   `git log --graph --decorate --pretty=oneline`
   
-  Con 'graph' se muestra el gráfico.<br>
-  Con 'decorate' se muestran los punteros.<br>
-  Con 'pretty=oneline' se muestran los commit en una línea
+  Con '--graph' se muestra el gráfico.<br>
+  Con '--decorate' se muestran los punteros.<br>
+  Con '--pretty=oneline' se muestran los commit en una línea
   
 **- El merge del paso 26, ¿Podría ser fast forward?¿Por qué?**
 
 Sí que podría ser fast forward ya que la rama master no había cambiado durante el trabajo en la rama title. Es decir, el merge puede generar un commit "en linea" de la rama master sin ningún problema.  
   
+  
+**- ¿Qué comando o comandos utilizaste en el paso 27?**
+
+  `git reset HEAD~1`
+    
+Al no indicar '--hard', dejo el working copy como está.
+
+**- ¿Qué comando o comandos utilizaste en el paso 28?**
+
+`git status`
+  
+Uso 'git status' para conocer qué tengo en mi working copy y ver qué opciones tengo. Obtengo lo siguiente:
+
+*λ git status*
+*On branch master*
+*Changes not staged for commit:*
+  *(use "git add <file>..." to update what will be committed)*
+  *(use "git checkout -- <file>..." to discard changes in working directory)<br>*
+        *modified:   git-nuestro.md<br>*
+*no changes added to commit (use "git add" and/or "git commit -a")*
+
+De tal manera, que para descartar los cambios sigo las instrucciones y hago:
+
+`git checkout -- git-nuestro.md`
+
+El paso 27 junto al paso 28 equivale a haber hecho un reset descartando cambios del working copy, es decir, incluyendo la sentencia '--hard'.
+
+
