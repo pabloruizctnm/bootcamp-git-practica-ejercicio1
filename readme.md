@@ -51,4 +51,8 @@ En este caso hemos hecho:
   
  En esta ocasión no causa conflictos porque master estaba actualizada a la rama styles; y habíamos conservado los cambios de la rama styles cuando la mergeamos con htmlify.
   
+ 
+**- ¿Qué comando o comandos utilizaste en el paso 25?**
+ 
+  `git`
   
