@@ -91,4 +91,28 @@ De tal manera, que para descartar los cambios sigo las instrucciones y hago:
 
 El paso 27 junto al paso 28 equivale a haber hecho un reset descartando cambios del working copy, es decir, incluyendo la sentencia '--hard'.
 
+**- ¿Qué comando o comandos utilizaste en el paso 29?**
 
+  `git branch -D title`
+   
+Uso '-D' para forzar el borrado de la rama. Esto es así porque al deshacer el merge la rama title se había quedado sin mergear. 
+
+**- ¿Qué comando o comandos utilizaste en el paso 30?**
+
+  `git reflog`
+  
+Con esto busco el commit que me interesa, que es había hecho el merge de la rama title sobre la master.
+
+A continuación hago:
+
+`git reset --hard f19be85`
+
+De esta manera vuelvo al commit que tenía el título, incluyendo la actualización del working copy.
+
+**- ¿Qué comando o comandos utilizaste en el paso 32?**
+  
+   `git `
+    
+**- ¿Qué comando o comandos utilizaste en el paso 33?**
+    
+   `git `
