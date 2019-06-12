@@ -60,3 +60,7 @@ En este caso hemos hecho:
   Con 'decorate' se muestran los punteros.<br>
   Con 'pretty=oneline' se muestran los commit en una línea
   
+**- El merge del paso 26, ¿Podría ser fast forward?¿Por qué?**
+
+Sí que podría ser fast forward ya que la rama master no había cambiado durante el trabajo en la rama title. Es decir, el merge puede generar un commit "en linea" de la rama master sin ningún problema.  
+  
