@@ -54,5 +54,9 @@ En este caso hemos hecho:
  
 **- ¿Qué comando o comandos utilizaste en el paso 25?**
  
-  `git`
+  `git log --graph --decorate --pretty=oneline`
+  
+  Con 'graph' se muestra el gráfico.<br>
+  Con 'decorate' se muestran los punteros.<br>
+  Con 'pretty=oneline' se muestran los commit en una línea
   
