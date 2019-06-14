@@ -1,3 +1,6 @@
+NOTA: A pesar de que el paso 35 de la práctica indica que hay que moverse a la etiqueta htmlify, yo no termino ahí. Hago un paso "36" para volver a mi último estado dado que en él mezclé la rama results con la rama master, que es precisamente donde estaba el fichero readme.md con las respuestas de la práctica.
+
+
 **- ¿Qué comando utilizaste en el paso 11? ¿Por qué?**
 
 `git reset --hard HEAD~1`
@@ -128,3 +131,6 @@ De esta manera vuelvo al commit que tenía el título, incluyendo la actualizaci
    A continuación hago:
    
    `git reset --hard f19be85`
+   
+ 
+ 
