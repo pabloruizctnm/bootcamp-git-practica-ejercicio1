@@ -111,8 +111,20 @@ De esta manera vuelvo al commit que tenía el título, incluyendo la actualizaci
 
 **- ¿Qué comando o comandos utilizaste en el paso 32?**
   
-   `git `
+   `git reflog`
+     
+   Con esto busco el commit inicial, cuando creé el poema.
+   
+   A continuación hago:
+   
+   `git reset --hard 4b6cb3c`
     
 **- ¿Qué comando o comandos utilizaste en el paso 33?**
     
-   `git `
+   `git reflog`
+     
+   Con esto busco el commit del estado final del repo, cuando puse título al poema.
+   
+   A continuación hago:
+   
+   `git reset --hard f19be85`
